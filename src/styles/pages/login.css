@@ -1,0 +1,143 @@
+body {
+    background: linear-gradient(329.54deg, #29B6D1 0%, #00C7C7 100%);
+}
+
+#page-login {
+    width: 70vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#wrap-description {
+    width: 260px;
+    height: 402px;
+    left: 330px;
+    top: 209px;
+}
+
+#wrap-description img {
+    width: 260px;
+    height: 234px;
+    left: 330px;
+    top: 209px;
+}
+
+.location {
+    width: 260px;
+    height: 68px;
+    left: 380px;
+    top: 543px;
+
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 34px;
+    /* or 142% */
+
+    text-align: center;
+
+    /* Shapes / 01 */
+
+    color: #FFFFFF;
+}
+
+#form-content-login {
+    position: absolute;
+    background: #fff;
+    width: 520px;
+    height: 100vh;
+    right: 0;
+    top: 0px;
+}
+
+#form-content-login .back {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    right: 25px;
+    top: 40px;
+    background: #EBF2F5;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form-content-login .wrap-login {
+    position: absolute;
+    width: 360px;
+    height: 430px;
+    top: 195px;
+    right: 70px;
+}
+
+#form-content-login .wrap-login h1 {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 34px;
+    color: #5C8599;
+    margin-bottom: 50px;
+}
+
+#form-content-login .wrap-login .input-block {
+    padding: 15px 0;
+}
+
+#form-content-login .wrap-login label {
+    width: 47px;
+    height: 22px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #8FA7B3;
+}
+
+#form-content-login .wrap-login input {
+    width: 360px;
+    height: 64px;
+    background: #F5F8FA;
+    border: 1px solid #D3E2E5;
+    box-sizing: border-box;
+    padding: 24px;
+    border-radius: 20px;
+}
+
+#form-content-login .wrap-login input:focus {
+    background: #F5F8FA;
+    border: 1px solid #A1E9C5;
+    box-sizing: border-box;
+    border-radius: 20px;
+    outline: none;
+}
+
+#form-content-login .wrap-login .wrap-forgot{
+   padding: 15px 0;
+   text-align: right;
+}
+
+#form-content-login .wrap-login .forgot-password {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #8FA7B3;
+    text-align: left;
+    text-decoration: none;
+}
+
+#form-content-login .wrap-login .confirm-button {
+    display: block;
+    width: 360px;
+    height: 64px;
+    background: #37C77F;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    outline: none;
+}
