@@ -15,6 +15,7 @@ export default function CreateOrphanage() {
   const [position, setPosistion ] = useState({ latitude: 0, longitude: 0 });
   const [name, setName] = useState('');
   const [about, setAbout] = useState('');
+  const [contact, setContact] = useState('');
   const [instructions, setInstructions] = useState('');
   const [opening_hours, setOpeningHours] = useState('');
   const [open_on_weekends, setOpenOnWeekends] = useState(true);
@@ -50,6 +51,7 @@ export default function CreateOrphanage() {
     const data = new FormData();
       data.append('name',name);
       data.append('about',about);
+      data.append('contact',contact);
       data.append('instructions',instructions);
       data.append('latitude',String(latitude));
       data.append('longitude',String(longitude));
@@ -114,6 +116,15 @@ export default function CreateOrphanage() {
                 maxLength={300}
                 value={about}
                 onChange={event => setAbout(event.target.value)}
+              />
+            </div>
+
+            <div className="input-block">
+              <label htmlFor="contact">Número de Whatsapp</label>
+              <input
+                id="contact"
+                value={contact}
+                onChange={event => setContact(event.target.value)}
               />
             </div>
 

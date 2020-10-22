@@ -1,0 +1,61 @@
+#page-delete {
+    width: 100vw;
+    height: 100vh;
+    background:#FF669D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+#page-delete .content-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1100px;
+    height: 100%;
+    max-height:680px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: url('../../images/delete.svg') no-repeat 65% center;
+    background-size: contain;
+}
+
+#page-delete .content-wrapper main{
+    max-width: 350px;
+}
+
+#page-delete .content-wrapper main h1 {
+    font-size: 76px;
+    font-weight: 900;
+    line-height: 70px;
+}
+
+#page-delete .content-wrapper main p {
+    margin-top: 40px;
+    font-size: 24px;
+    line-height: 34px;
+
+}
+.content-wrapper .delete-app {
+    margin-top: 50px;
+    height: 56px;
+    background: #D6487B;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+.content-wrapper .delete-app:hover {
+    background: #f03277;
+}

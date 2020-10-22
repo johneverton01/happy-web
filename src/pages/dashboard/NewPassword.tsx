@@ -1,12 +1,15 @@
 import React from 'react';
 import { FiArrowLeft } from 'react-icons/fi';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 import '../../styles/pages/login.css';
 
 import logo from '../../images/logo.svg';
 
-function Login() {
+function NewPassword() {
+
+    const { goBack } = useHistory();
+
     return (
         <main id="page-login">
             <div id="wrap-description">
@@ -18,12 +21,14 @@ function Login() {
 
             </div>
             <div id="form-content-login">
-                <Link to="/" className="back">
+                <button className="back" onClick={goBack}>
                     <FiArrowLeft size={26} color="rgba(0, 0, 0, 0.6)" />
-                </Link>
+                </button>
                 <form onSubmit={() => {}} >
                     <div className="wrap-login">
-                        <h1>Fazer login</h1>
+                        <h1>Esqueci a senha</h1>
+                        <p>Sua redefinição de senha será enviada
+                        para o e-mail cadastrado.</p>
                         <div className="input-block">
                             <label htmlFor="email">E-mail</label>
                             <input
@@ -31,25 +36,12 @@ function Login() {
                                 onChange={() => { }}
                             />
                         </div>
-                        <div className="input-block">
-                            <label htmlFor="password">Senha</label>
-                            <input
-                                id="password"
-                                type="password"
-                                onChange={() => { }}
-                            />
-                        </div>
-                        <div className="wrap-forgot">
-                            <Link to="/forgot-password" className="forgot-password">
-                                Esqueci minha senha
-                            </Link>
-                        </div>
-                        {/* <Link to="/dashboard" > */}
+                        <Link to="/dashboard" >
                             <button className="confirm-button" type="submit">
                                 Enviar
                             </button>
 
-                       {/*  </Link> */}
+                        </Link>
 
                     </div>
                 </form>
@@ -60,4 +52,4 @@ function Login() {
     );
 }
 
-export default Login;
+export default NewPassword;

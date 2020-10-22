@@ -19,15 +19,18 @@ interface Orphanage {
 function OrphanagesMap() {
     const [orphanages, setOrphanages] = useState<Orphanage[]>([]);
     useEffect(() => {
-        api.get('orphanages').then(response => {
+        api.get(`orphanages/status/${1}`).then(response => {
            setOrphanages(response.data);
         });
     }, []);
+
     return (
         <div id="page-map">
             <aside>
                 <header>
+                <Link to="/" >
                     <img src={mapMarkImg} alt="Happy"/>
+                </Link>
                     <h2>Escolha um orfanato no mapa</h2>
                     <p>Muitas crianças estão esperando a sua visita :)</p>
                 </header>

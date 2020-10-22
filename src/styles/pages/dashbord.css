@@ -1,0 +1,73 @@
+#page-orphanage main.dasboard-wrap {
+    min-width: 1100px;
+    width: 94vw;
+    left: 95px;
+    padding: 30px 50px;
+    position: absolute;
+    color: #4D6F80;
+}
+
+#page-orphanage main.dasboard-wrap header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#page-orphanage main.dasboard-wrap h1 {
+    display: inline;
+}
+
+.orphanages-wraper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+
+.map-container {
+    margin: 25px;
+    background: #E6F7FB;
+    border-radius: 20px;
+}
+.map-container .map-footer {
+    background: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0 0px 20px  20px;
+}
+.map-container .leaflet-container{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px 20px 0 0;
+}
+
+.map-footer nav{
+    display: flex;
+}
+.nav-icon{
+    background: #EBF2F5;
+    border-radius: 16px;
+    padding: 15px;
+    margin: 0 5px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+.nav-icon:hover{
+    background: #bec1c2;
+}
+
+button.nav-icon{
+    outline: none;
+    border: none;
+}
+
+.nav-icon a {
+    justify-content: space-between;
+    align-content: center;
+    height: 48px;
+    width: 48px;
+}
+

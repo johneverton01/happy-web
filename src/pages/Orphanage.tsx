@@ -17,6 +17,7 @@ interface Orphanage {
   instructions: string;
   opening_hours: string;
   open_on_weekends: boolean;
+  contact: string,
   images: Array<{
     id: number
     url: string
@@ -113,11 +114,13 @@ export default function Orphanage() {
                 fim de semana
               </div>)}
             </div>
-
-           {/*  <button type="button" className="contact-button">
-              <FaWhatsapp size={20} color="#FFF" />
-              Entrar em contato
-            </button> */}
+              <a
+                 href={`https://api.whatsapp.com/send?phone=${orphanage.contact}&text=Ol%C3%A1%20estou%20querendo%20marcar%20um%20horario%20de%20visita`}
+                 className="contact-button"
+                 target="_blank">
+                <FaWhatsapp size={20} color="#FFF" />
+                Entrar em contato
+              </a>
           </div>
         </div>
       </main>
