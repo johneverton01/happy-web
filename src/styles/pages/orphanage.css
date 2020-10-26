@@ -172,3 +172,10 @@
 .orphanage-details .orphanage-details-content button.contact-button:hover {
   background: #36CF82;
 }
+
+.footer-action {
+  border-top: 1px solid #D3E2E5;
+  border-radius: 0 0 20px 20px;
+  margin: 30px 0;
+  display: flex;
+}

@@ -1,44 +1,59 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">
+    <img alt="Happy" title="Happy" src=".github/logo.svg" />
+</h1>
 
-## Available Scripts
+<p align="center">
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-licença">Licença</a>
+</p>
 
-In the project directory, you can run:
+<p align="center">
+ <img src="https://img.shields.io/static/v1?label=PRs&message=welcome&color=15C3D6&labelColor=000000" alt="PRs welcome!" />
 
-### `yarn start`
+  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=15C3D6&labelColor=000000">
+</p>
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<br>
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+<p align="center">
+  <img alt="Happy" src=".github/happy.png" width="100%">
+</p>
 
-### `yarn test`
+## 🚀 Tecnologias
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-### `yarn build`
+- [Node.js](https://nodejs.org/en/)
+- [TypeScript](https://www.typescriptlang.org/)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 💻 Projeto
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Esse projeto foi desenvolvido na **[Next Level Week](https://rocketseat.com.br/)** da **[Rocketseat](https://www.linkedin.com/school/rocketseat/about/)**
+O Happy é uma aplicação que conecta pessoas à casas de acolhimento institucional para fazer o dia de muitas crianças mais feliz 💜
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🧠 Desafio
 
-### `yarn eject`
+Ao final da **[[Next Level Week](https://rocketseat.com.br/)]** foi lançado alguns desafios para levar a aplicação a outro level
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- [Desafio Happy 2.0](https://www.notion.so/Vers-o-2-0-do-Happy-c754db7a4d41469e8c2d00fcf75392c4)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Desafios concluídos
+- Acesso restrito
+- Dashboard
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## :memo: Licença
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Este projeto foi desenvolvido com ❤️ por **[@John Everton](https://www.linkedin.com/in/john-everton01/)**, com o instrutor **[@Diego3g](https://github.com/diego3g)** 💜. <br>
+Se isso te ajudou, dê uma ⭐, isso vai me ajudar também! 😉
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<hr>
+
+<div align="center">
+
+[![Linkedin Badge](https://img.shields.io/badge/-John%20Everton-292929?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/john-everton01/)](https://www.linkedin.com/in/john-everton01/)
+
+</div>

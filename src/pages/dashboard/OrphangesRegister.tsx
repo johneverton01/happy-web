@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { Link, Redirect } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { FiArrowRight } from "react-icons/fi";
 import { Map, Marker, TileLayer } from "react-leaflet";
 import mapIcon from '../../Util/mapIcon';
 import Sidebar from '../../components/SideBarDashbord';
 import api from "../../Services/api";
+import authHeader from "../../Services/auth-header";
 
 import '../../styles/pages/dashbord.css'
 
@@ -16,20 +17,18 @@ interface Orphanage {
 }
 
 export default function ListOrphanages() {
-    function handleDeleteOrphanage(id: number) {
-        api.delete(`orphanages/delete/${id}`).then(response => {
-            return <Redirect to='/delete' />
-            if(response.data.id){
-                return <Redirect to='/delete' />
-            }
-        })
-    }
+    const history = useHistory();
     const [orphanages, setOrphanages] = useState<Orphanage[]>([]);
     useEffect(() => {
         api.get(`orphanages/status/${0}`).then(response => {
             setOrphanages(response.data);
         });
     }, []);
+
+    if(authHeader() == null){
+        history.push('/login');
+    }
+
     if (!orphanages) {
         return <p>Carregando ...</p>
     }
@@ -64,13 +63,12 @@ export default function ListOrphanages() {
                                 <div className="map-footer">
                                     <h2>{orphanage.name}</h2>
                                     <nav>
-                                        <Link to="" className="nav-icon">
+                                        <Link to={`/orphanages/accept/${orphanage.id}`} className="nav-icon">
                                             <FiArrowRight size={24} color="#15C3D6" />
                                         </Link>
                                     </nav>
                                 </div>
                             </div>
-
                         )
                     })}
                 </div>
